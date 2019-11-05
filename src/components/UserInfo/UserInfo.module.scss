@@ -1,0 +1,24 @@
+@import '../../variables.scss';
+@import "../../ui.scss";
+
+.component {
+  display: flex;
+  align-items: center;
+  height: $header-height;
+  padding: 0 24px;
+  
+  font-size: 24px;
+  line-height: 24px;
+
+  border-bottom: 1px solid rgba($color-light, 0.5);
+}
+
+.userName {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.logOutButton {
+  @extend %link-button;
+  @extend %link-button-danger;
+}

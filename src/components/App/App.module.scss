@@ -1,0 +1,19 @@
+@import "../../variables.scss";
+
+.component {
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  width: $sidebar-width;
+
+  background: white;
+  border-right: 1px solid rgba($color-light, 0.5);
+}
+
+.body {
+  margin-left: $sidebar-width;
+}

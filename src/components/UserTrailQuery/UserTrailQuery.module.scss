@@ -1,0 +1,25 @@
+@import "../../variables.scss";
+
+.component {
+  padding: 0 24px;
+}
+
+.header {
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+}
+
+.query {
+  font-weight: 600;
+  font-size: 15px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin-left: 18px;
+}
+
+.timestamp {
+  width: 36px;
+  color: rgba($color-light, 0.7);
+  flex-shrink: 0;
+}

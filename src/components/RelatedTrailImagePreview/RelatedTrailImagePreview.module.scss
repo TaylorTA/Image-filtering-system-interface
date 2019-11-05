@@ -1,0 +1,47 @@
+@import '../../variables.scss';
+
+.component {
+  margin-left: 17px;
+  padding: 6px 6px 6px 6px;
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
+  position: relative;
+
+  background: rgba($color-light, 0.2);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    width: 0;
+    height: 0;
+    
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent rgba($color-light, 0.2) transparent;
+  }
+}
+
+  .imageWrapperArrowLeft::before {
+    left: 55px;
+    margin-left: -10px;
+  }
+
+  .imageWrapperArrowCenter::before {
+    left: 50%;
+    margin-left: -10px;
+  }
+
+  .imageWrapperArrowRight::before {
+    right: 55px;
+    margin-right: -10px;
+  }
+
+.image {
+  
+}

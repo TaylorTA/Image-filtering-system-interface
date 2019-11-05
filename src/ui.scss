@@ -1,0 +1,110 @@
+@import './variables.scss';
+
+%input {
+  display: block;
+  border: 1px solid lighten($color-light, 30%);
+  border-radius: 3px;
+  padding: 8px 12px;
+
+  transition-property: border-color, border-radius, background, color;
+  transition-duration: 0.2s, 0.2s, 0.2s, 0.2s;
+
+  &:not(:disabled) {
+    &:hover,
+    &:focus {
+      border-color: lighten($color-light, 10%);
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    color: $color-light;
+    background: rgba($color-light, 0.1);
+    border-color: rgba($color-light, 0.2);
+  }
+}
+
+  %input-theme-error {
+    border-color: $color-danger;
+  }
+
+  %input-error {
+    background: rgba($color-danger, 0.2);
+    color: $color-danger;
+    padding: 8px 12px;
+    
+    &:last-of-type {
+      border-radius: 0 0 3px 3px;
+    }
+  }
+
+%button {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+  %button-theme-primary {
+    background: $color-primary;
+    color: white;
+
+    transition-property: background;
+    transition-duration: 0.1s;
+
+    &:not(:disabled) {
+        &:focus,
+        &:hover {
+          background: darken($color-primary, 10%);
+        }
+    
+        &:active {
+          background: darken($color-primary, 20%);
+        }
+    }
+
+    &:disabled {
+      background: rgba($color-primary, 0.4);
+    }
+  }
+
+  %link-button {
+    display: block;
+    font-size: 14px;
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:not(:disabled) {
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration: none;
+      }
+    }
+  }
+
+    %link-button-danger {
+      color: $color-danger;
+
+      transition-property: color;
+      transition-duration: 0.1s;
+
+      &:not(:disabled) {
+        &:hover,
+        &:focus {
+          color: darken($color-danger, 10%);
+        }
+
+        &:active {
+          color: darken($color-danger, 20%);
+        }
+      }
+
+      &:disabled {
+        color: rgba($color-danger, 0.4);
+      }
+    }

@@ -1,0 +1,13 @@
+@import '../../variables.scss';
+
+.images {
+  display: grid;
+  grid-auto-rows: 80px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 12px;
+  
+  margin-left: 17px;
+  padding: 6px 0 6px 36px;
+
+  border-left: 1px solid rgba($color-light, 0.3);
+}

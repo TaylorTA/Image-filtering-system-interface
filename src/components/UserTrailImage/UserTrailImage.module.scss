@@ -1,0 +1,32 @@
+@import "../../variables.scss";
+
+.component {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  
+  box-shadow: 0 0 0 1px rgba($color-light, 0.2);
+
+  transition-property: box-shadow;
+  transition-duration: 0.2s;
+  
+  &:hover {
+    outline: none;
+    box-shadow: 0 0 5px $color-primary;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.image {
+  display: block;
+  opacity: 0;
+}

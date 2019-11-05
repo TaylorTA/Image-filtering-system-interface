@@ -1,0 +1,26 @@
+@import "../../variables.scss";
+
+.component {
+  padding: 0 24px;
+  border-top-color: gainsboro;
+  border-top-width: 2px;
+  border-top-style: dashed;
+  margin-bottom: 18px;
+  word-wrap: break-word; 
+}
+
+.header {
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  word-wrap: break-word; 
+}
+
+.query {
+  font-weight: 600;
+  flex-grow: 1;
+  flex-shrink: 1;
+  text-overflow: ellipsis; 
+  overflow: hidden; 
+  white-space: nowrap;
+}

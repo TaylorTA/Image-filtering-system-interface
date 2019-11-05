@@ -1,0 +1,147 @@
+@import '../../variables.scss';
+
+.layoutComponent {
+  padding: 0 24px;
+}
+
+.layoutCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: $header-height;
+  padding: 0 24px;
+  
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  //grid-template-columns: repeat(auto-fit, 100px);
+  //grid-column-gap: 0px;
+  position: relative;
+  //padding: 24px 24px 24px 24px;
+}
+
+.label1{
+  color: green;
+}
+
+.textBlock1 {
+  //position: absolute;
+  bottom: 20px;
+  right: 20px;
+  //background-color: black;
+  color: brown;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.textBlock2 {
+  //position: absolute;
+  bottom: 20px;
+  right: 20px;
+  //background-color: black;
+  color: purple;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.textBlock3 {
+  //position: absolute;
+  bottom: 20px;
+  right: 20px;
+  //background-color: black;
+  color: gray;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.textBlock4 {
+  //position: absolute;
+  bottom: 20px;
+  right: 20px;
+  //background-color: black;
+  color: darkcyan;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.textBlock5 {
+  //position: absolute;
+  bottom: 20px;
+  right: 20px;
+  //background-color: black;
+  color: darkblue;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.check-input  {
+  -webkit-appearance: checkbox;
+  color: white;
+  appearance: value;
+}
+
+.body { 
+  // display: grid;
+  // grid-template-columns: repeat(auto-fit, 450px);
+  justify-content: center;
+  //grid-column-gap: 24px;
+  position: relative;
+  padding: 20 20;
+}
+
+
+.body1 { 
+  // display: grid;
+  // grid-template-columns: repeat(auto-fit, 450px);
+  float: left;
+  width: 33.3%;
+  //padding: 8px;
+  padding: 20 20;
+}
+
+.emptyState {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 300;
+  color: rgba($color-dark, 0.5);
+  align-self: center;
+}
+
+.spinner {
+  width: 64px;
+  height: 64px;
+}
+
+  .spinner::after {
+    content: " ";
+    display: block;
+    width: 46px;
+    height: 46px;
+    margin: 1px;
+    border-radius: 50%;
+    border: 5px solid rgba($color-dark, 0.5);
+    border-color: rgba($color-dark, 0.5) transparent rgba($color-dark, 0.5) transparent;
+    animation: spinner 1.2s linear infinite;
+  }
+
+  @keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

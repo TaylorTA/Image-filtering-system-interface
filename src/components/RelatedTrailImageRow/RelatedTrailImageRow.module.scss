@@ -1,0 +1,9 @@
+@import '../../variables.scss';
+
+.images {
+  display: grid;
+  grid-auto-rows: 80px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 12px;
+  padding: 6px 6px 6px 6px;
+}
